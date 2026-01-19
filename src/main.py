@@ -9,7 +9,7 @@ dt = 0.01
 t = np.arange(0, 10, dt)
 
 pilot_cmd = np.zeros_like(t)
-pilot_cmd[t > 1.0] = 10.0  # aggressive pitch-up
+pilot_cmd[t > 1.0] = 18.0  # aggressive pitch-up
 
 protection = EnvelopeProtection()
 aircraft = AircraftModel()
